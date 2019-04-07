@@ -13,18 +13,26 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,700' }
+    ]
   },
 
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#38C172',
+    height: '4px',
+  },
 
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: [
+    '~/assets/css/main.scss'
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -54,5 +62,21 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  /*
+  ** Transition Settings
+  */
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
+
+  /*
+  ** Router Settings
+   */
+  router: {
+    linkActiveClass: '',
+    linkExactActiveClass: 'border-b-2'
+  },
 }
