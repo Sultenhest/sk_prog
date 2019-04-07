@@ -25,7 +25,7 @@ module.exports = {
   loading: {
     color: '#38C172',
     height: '4px',
-    throttle: 0,
+    throttle: 10,
     duration: 6000
   },
 
@@ -33,7 +33,7 @@ module.exports = {
    ** Transition Settings
    */
   transition: {
-    name: 'fade',
+    name: 'page',
     mode: 'out-in'
   },
 
