@@ -8,8 +8,11 @@
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:3000 using nuxt
 $ npm run dev
+
+# serve with hot reload at localhost:3000 using express.js
+$ npm run express
 
 # build for production and launch server
 $ npm run build
