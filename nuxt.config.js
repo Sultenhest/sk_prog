@@ -30,6 +30,22 @@ module.exports = {
   },
 
   /*
+   ** Transition Settings
+   */
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
+
+  /*
+   ** Router Settings
+   */
+  router: {
+    linkActiveClass: '',
+    linkExactActiveClass: 'border-b-2'
+  },
+
+  /*
    ** Global CSS
    */
   css: [
@@ -64,21 +80,5 @@ module.exports = {
         })
       }
     }
-  },
-
-  /*
-  ** Transition Settings
-  */
-  transition: {
-    name: 'fade',
-    mode: 'out-in'
-  },
-
-  /*
-  ** Router Settings
-   */
-  router: {
-    linkActiveClass: '',
-    linkExactActiveClass: 'border-b-2'
-  },
+  }
 }
