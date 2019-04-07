@@ -1,5 +1,5 @@
 <template>
-    <section id="profile" class="container px-12 md:px-0 mx-auto my-6">
+    <section id="profile" class="container mx-auto my-6">
         <div class="mx-6 mt-6">
             <h2 class="text-3xl font-bold">Profile</h2>
             <p class="text-base">A short word</p>
