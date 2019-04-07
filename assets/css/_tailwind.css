@@ -60,3 +60,28 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.card {
+    @apply .block .rounded .overflow-hidden .shadow .no-underline;
+}
+
+.card--flex {
+    @apply .flex .items-center .justify-center;
+}
+
+.card:hover {
+    @apply .shadow-md;
+    transform: translateY( -1px );
+}
+
+.navigation a:hover {
+    @apply .border-b-2;
+}
+
+.text-inherit {
+    color: inherit;
+}
+
+a {
+    @apply .no-underline .text-inherit;
+}
