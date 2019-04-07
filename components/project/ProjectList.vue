@@ -4,7 +4,7 @@
             <div class="grid__cell m-6">
                 <Project
                     link="http://viaequity.com/"
-                    imageSrc="via_equity.png"
+                    image-src="via_equity.png"
                     title="VIA Equity"
                     subtitle="Multilingual WordPress Theme"
                 />
@@ -12,7 +12,7 @@
             <div class="grid__cell-large m-6">
                 <Project
                     link="https://vl.dk/"
-                    imageSrc="vl.png"
+                    image-src="vl.png"
                     title="Dansk Selskab for Virksomhedsledelse"
                     subtitle="Event Plugin Development"
                 />
@@ -20,7 +20,7 @@
             <div class="grid__cell-tall m-6">
                 <Project
                     link="https://wordpress.org/themes/voltata/"
-                    imageSrc="voltata.png"
+                    image-src="voltata.png"
                     title="Voltata"
                     subtitle="WordPress Repository Theme"
                 />
@@ -33,27 +33,27 @@
         <div class="flex flex-wrap lg:hidden">
             <div class="md:w-1/2">
                 <Project
-                    hasMargin
+                    has-margin
                     link="https://vl.dk/"
-                    imageSrc="vl.png"
+                    image-src="vl.png"
                     title="Dansk Selskab for Virksomhedsledelse"
                     subtitle="Event Plugin Development"
                 />
             </div>
             <div class="md:w-1/2">
                 <Project
-                    hasMargin
+                    has-margin
                     link="http://viaequity.com/"
-                    imageSrc="via_equity.png"
+                    image-src="via_equity.png"
                     title="VIA Equity"
                     subtitle="Multilingual WordPress Theme"
                 />
             </div>
             <div class="md:w-1/2">
                 <Project
-                    hasMargin
+                    has-margin
                     link="https://wordpress.org/themes/voltata/"
-                    imageSrc="voltata.png"
+                    image-src="voltata.png"
                     title="Voltata"
                     subtitle="WordPress Repository Theme"
                 />

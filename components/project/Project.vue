@@ -40,7 +40,8 @@ export default {
         },
         subtitle: {
             type: String,
-            required: false
+            required: false,
+            default: ''
         }
     },
     computed: {
