@@ -20,6 +20,13 @@ module.exports = {
   },
 
   /*
+   ** Global CSS
+   */
+  css: [
+    '~/assets/css/main.scss'
+  ],
+
+  /*
    ** Customize the progress-bar color
    */
   loading: {
@@ -42,13 +49,6 @@ module.exports = {
     linkActiveClass: '',
     linkExactActiveClass: 'border-b-2'
   },
-
-  /*
-   ** Global CSS
-   */
-  css: [
-    '~/assets/css/main.scss'
-  ],
 
   /*
    ** Plugins to load before mounting the App
