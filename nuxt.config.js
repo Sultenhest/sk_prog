@@ -24,9 +24,7 @@ module.exports = {
    */
   loading: {
     color: '#38C172',
-    height: '4px',
-    throttle: 10,
-    duration: 6000
+    height: '4px'
   },
 
   /*
