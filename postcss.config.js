@@ -13,18 +13,25 @@ const plugins = [
     require('autoprefixer')
 ]
 
-if (process.env.NODE_ENV === "production") {
+const whitelisted = [
+    'html', 'body',
+    'page-enter-active', 'page-leave-active', 'page-enter', 'page-leave-active',
+    'progress', 'nuxt-progress', 'nuxt-progress-notransition', 'nuxt-progress-failed',
+    'border-b-2'
+]
+
+if (process.env.NODE_ENV === 'production') {
     plugins.push(
         purgecss({
             content: [
-                "./layouts/**/*.vue",
-                "./components/**/*.vue",
-                "./pages/**/*.vue"
+                './layouts/**/*.vue',
+                './components/**/*.vue',
+                './pages/**/*.vue'
             ],
-            whitelist: ["html", "body", "page-enter-active", "page-leave-active", "page-enter", "page-leave-active"],
+            whitelist: whitelisted,
             extractors: [{
                 extractor: TailwindExtractor,
-                extensions: ["html", "vue"]
+                extensions: ['html', 'vue']
             }]
         })
     );

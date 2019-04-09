@@ -20,19 +20,19 @@ module.exports = {
   },
 
   /*
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: '#38C172',
+    height: '5px'
+  },
+
+  /*
    ** Global CSS
    */
   css: [
     '~/assets/css/main.scss'
   ],
-
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: {
-    color: '#38C172',
-    height: '4px'
-  },
 
   /*
    ** Transition Settings
