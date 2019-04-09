@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
                 "./components/**/*.vue",
                 "./pages/**/*.vue"
             ],
-            whitelist: ["html", "body"],
+            whitelist: ["html", "body", "page-enter-active", "page-leave-active", "page-enter", "page-leave-active"],
             extractors: [{
                 extractor: TailwindExtractor,
                 extensions: ["html", "vue"]
