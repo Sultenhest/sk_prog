@@ -3,14 +3,14 @@ export const state = () => ({
 });
 
 export const mutations = {
-    changeMode(state) {
+    toggleDarkmode(state) {
         state.mode = !state.mode;
     }
 };
 
 export const actions = {
-    changeMode(context) {
-        context.commit('changeMode');
+    toggleDarkmode(context) {
+        context.commit('toggleDarkmode');
     }
 };
 

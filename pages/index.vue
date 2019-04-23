@@ -1,9 +1,17 @@
 <template>
     <div id="home">
-        <section class="w-full bg-grey-light py-32">
+        <section
+            class="w-full py-32"
+            :class="[darkmode ? 'bg-grey-dark' : 'bg-grey-light']"
+        >
             <div class="container px-6 mx-auto">
                 <h1 class="text-5xl font-bold mb-3">Simon Konstantyner</h1>
-                <p class="text-xl text-grey-darker">
+                <p
+                    class="text-xl"
+                    :class="[
+                        darkmode ? 'text-grey-lighter' : 'text-grey-darker'
+                    ]"
+                >
                     is a fullstack webdeveloper
                 </p>
             </div>

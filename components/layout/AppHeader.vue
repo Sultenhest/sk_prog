@@ -16,8 +16,19 @@
                 <nuxt-link to="/" title="Projects" class="mr-6 border-green"
                     >Projects</nuxt-link
                 >
-                <nuxt-link to="/profile" title="Profile" class="border-green"
+                <nuxt-link
+                    to="/profile"
+                    title="Profile"
+                    class="mr-6 border-green"
                     >Profile</nuxt-link
+                >
+                <nuxt-link
+                    to="/darkmode"
+                    title="Moon"
+                    role="image"
+                    aria-label="crescent moon"
+                    class="border-none"
+                    >🌙</nuxt-link
                 >
             </nav>
         </div>

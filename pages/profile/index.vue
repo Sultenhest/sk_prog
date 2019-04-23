@@ -1,8 +1,8 @@
 <template>
-    <section id="profile" class="container mx-auto my-6">
+    <div id="profile" class="container mx-auto my-6">
         <div class="mx-6 mt-6">
             <h2 class="text-3xl font-bold">Profile</h2>
-            <p class="text-base">A short word</p>
+            <p class="text-base text-grey-darker">A short word</p>
         </div>
 
         <section class="flex flex-wrap mt-6">
@@ -134,7 +134,7 @@
                 </div>
             </div>
         </section>
-    </section>
+    </div>
 </template>
 
 <script>

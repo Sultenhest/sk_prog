@@ -61,8 +61,20 @@
  * @import "utilities/skew-transforms";
  */
 
+.transition {
+    transition: all 0.2s;
+}
+
+.text-inherit {
+    color: inherit;
+}
+
+a {
+    @apply .no-underline .text-inherit .transition
+}
+
 .card {
-    @apply .block .rounded .overflow-hidden .shadow .no-underline;
+    @apply .block .rounded .overflow-hidden .shadow .no-underline .transition;
 }
 
 .card--flex {
@@ -76,12 +88,4 @@
 
 .navigation a:hover {
     @apply .border-b-2;
-}
-
-.text-inherit {
-    color: inherit;
-}
-
-a {
-    @apply .no-underline .text-inherit;
 }
