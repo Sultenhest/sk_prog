@@ -15,6 +15,7 @@ import AppHeader from '~/components/layout/AppHeader.vue';
 import AppFooter from '~/components/layout/AppFooter.vue';
 
 export default {
+    middleware: 'middleware',
     components: {
         AppHeader,
         AppFooter

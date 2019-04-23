@@ -35,22 +35,6 @@ module.exports = {
   ],
 
   /*
-   ** Transition Settings
-   */
-  transition: {
-    name: 'page',
-    mode: 'out-in'
-  },
-
-  /*
-   ** Router Settings
-   */
-  router: {
-    linkActiveClass: '',
-    linkExactActiveClass: 'border-b-2'
-  },
-
-  /*
    ** Plugins to load before mounting the App
    */
   plugins: [],
@@ -78,5 +62,21 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  /*
+   ** Transition Settings
+   */
+  transition: {
+    name: 'page',
+    mode: 'out-in'
+  },
+
+  /*
+   ** Router Settings
+   */
+  router: {
+    linkActiveClass: '',
+    linkExactActiveClass: 'border-b-2'
+  },
 }
