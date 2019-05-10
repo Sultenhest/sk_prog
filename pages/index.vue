@@ -1,17 +1,14 @@
 <template>
     <div id="home">
         <section
-            class="w-full py-32"
+            class="w-full h-three-quarters-screen background flex items-center"
             :class="[darkmode ? 'bg-grey-dark' : 'bg-grey-light']"
         >
             <div class="container px-6 mx-auto">
-                <h1 class="text-5xl font-bold mb-3">Simon Konstantyner</h1>
-                <p
-                    class="text-xl"
-                    :class="[
-                        darkmode ? 'text-grey-lighter' : 'text-grey-darker'
-                    ]"
-                >
+                <h1 class="text-5xl text-white font-bold mb-3 ">
+                    Simon Konstantyner
+                </h1>
+                <p class="text-xl text-grey-lighter">
                     is a fullstack webdeveloper
                 </p>
             </div>

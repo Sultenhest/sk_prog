@@ -69,6 +69,10 @@
     color: inherit;
 }
 
+.h-three-quarters-screen {
+    height: 75vh;
+}
+
 a {
     @apply .no-underline .text-inherit .transition
 }
@@ -88,4 +92,9 @@ a {
 
 .navigation a:hover {
     @apply .border-b-2;
+}
+
+.background {
+    @apply .bg-fixed .bg-center .bg-no-repeat .bg-cover;
+    background-image: url("../images/header.jpg");
 }
