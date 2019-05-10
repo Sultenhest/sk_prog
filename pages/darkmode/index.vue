@@ -1,6 +1,6 @@
 <template>
-    <div id="darkmode" class="container mx-auto my-6 text-center">
-        <div class="mx-6 mt-6">
+    <div id="darkmode" class="container mx-auto mb-6 text-center">
+        <div class="mx-6 pt-24">
             <h2 class="text-3xl font-bold mb-6">Enter darkmode?</h2>
             <p class="text-base text-grey-darker">
                 <no-ssr>

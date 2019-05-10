@@ -1,6 +1,7 @@
 <template>
     <div id="home">
         <section
+            id="header-section"
             class="w-full h-three-quarters-screen background flex items-center"
             :class="[darkmode ? 'bg-grey-dark' : 'bg-grey-light']"
         >

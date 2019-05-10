@@ -1,5 +1,12 @@
 <template>
-    <header id="nav" class="w-full">
+    <header
+        id="nav"
+        class="w-full fixed z-40"
+        :class="[
+            darkmode ? 'bg-black text-white' : 'bg-white text-black',
+            frontpage
+        ]"
+    >
         <div
             class="container mx-auto px-6 h-24 flex justify-between items-center"
         >
@@ -54,6 +61,12 @@ export default {
         Logo
     },
     computed: {
+        frontpage() {
+            if (this.$nuxt.$route.name === 'index') {
+                return 'transparent-background text-white';
+            }
+            return '';
+        },
         darkmode() {
             return this.$store.getters['darkmode/isDarkmode'];
         }

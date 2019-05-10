@@ -94,6 +94,10 @@ a {
     @apply .border-b-2;
 }
 
+.transparent-background {
+    background: transparent !important;
+}
+
 .background {
     @apply .bg-fixed .bg-center .bg-no-repeat .bg-cover;
     background-image: url("../images/header.jpg");
