@@ -1,6 +1,6 @@
 <template>
     <a
-        class="card bg-white text-black"
+        class="card bg-white text-black z-0"
         target="_blank"
         :href="link"
         :class="hasMargin ? 'm-6' : ''"

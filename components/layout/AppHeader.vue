@@ -1,7 +1,7 @@
 <template>
     <header
         id="nav"
-        class="w-full fixed z-40"
+        class="w-full fixed z-40 transition"
         :class="[
             darkmode ? 'bg-black text-white' : 'bg-white text-black',
             frontpage
@@ -53,6 +53,8 @@
 </template>
 
 <script>
+import inViewport from 'in-viewport';
+
 import Logo from '~/components/Logo.vue';
 
 export default {
@@ -60,15 +62,30 @@ export default {
     components: {
         Logo
     },
+    data() {
+        return {
+            isInViewport: true
+        };
+    },
     computed: {
         frontpage() {
-            if (this.$nuxt.$route.name === 'index') {
-                return 'transparent-background text-white';
-            }
-            return '';
+            return this.$nuxt.$route.name === 'index' && this.isInViewport
+                ? 'transparent-background text-white'
+                : '';
         },
         darkmode() {
             return this.$store.getters['darkmode/isDarkmode'];
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.isVisible, { passive: true });
+    },
+    methods: {
+        isVisible() {
+            this.isInViewport = inViewport(
+                document.querySelector('#header-section'),
+                { offset: -96, debounce: 200 }
+            );
         }
     }
 };

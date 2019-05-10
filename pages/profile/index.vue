@@ -1,7 +1,7 @@
 <template>
     <div id="profile" class="container mx-auto mb-6">
-        <div class="mx-6 pt-24">
-            <h2 class="text-3xl font-bold">Profile</h2>
+        <div class="mx-6 pt-32 pb-10">
+            <h2 class="text-4xl font-bold">Profile</h2>
             <p class="text-base text-grey-darker">A short word</p>
         </div>
 
