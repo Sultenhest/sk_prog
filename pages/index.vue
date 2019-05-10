@@ -2,7 +2,7 @@
     <div id="home">
         <section
             id="header-section"
-            class="w-full h-three-quarters-screen background flex items-center"
+            class="w-full h-three-quarters-screen bg-cover-image flex items-center"
             :class="[darkmode ? 'bg-grey-dark' : 'bg-grey-light']"
         >
             <div class="container px-6 mx-auto">

@@ -1,7 +1,7 @@
 <template>
     <header
         id="nav"
-        class="w-full fixed z-40 transition"
+        class="w-full z-40 transition"
         :class="[
             darkmode ? 'bg-black text-white' : 'bg-white text-black',
             frontpage
@@ -70,8 +70,8 @@ export default {
     computed: {
         frontpage() {
             return this.$nuxt.$route.name === 'index' && this.isInViewport
-                ? 'transparent-background text-white'
-                : '';
+                ? 'navigation__absolute'
+                : 'navigation__fixed';
         },
         darkmode() {
             return this.$store.getters['darkmode/isDarkmode'];
@@ -90,3 +90,18 @@ export default {
     }
 };
 </script>
+
+<style lang="scss" scoped>
+.navigation a:hover {
+    @apply .border-b-2;
+}
+
+.navigation__absolute {
+    @apply .absolute .text-white;
+    background: transparent !important;
+}
+
+.navigation__fixed {
+    @apply .fixed;
+}
+</style>

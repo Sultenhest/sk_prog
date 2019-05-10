@@ -77,28 +77,9 @@ a {
     @apply .no-underline .text-inherit .transition
 }
 
-.card {
-    @apply .block .rounded .overflow-hidden .shadow .no-underline .transition;
-}
+@import "utilities/cards";
 
-.card--flex {
-    @apply .flex .items-center .justify-center;
-}
-
-.card:hover {
-    @apply .shadow-md;
-    transform: translateY( -1px );
-}
-
-.navigation a:hover {
-    @apply .border-b-2;
-}
-
-.transparent-background {
-    background: transparent !important;
-}
-
-.background {
+.bg-cover-image {
     @apply .bg-fixed .bg-center .bg-no-repeat .bg-cover;
     background-image: url("../images/header.jpg");
 }

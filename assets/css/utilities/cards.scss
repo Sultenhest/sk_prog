@@ -1,0 +1,12 @@
+.card {
+    @apply .block .rounded .overflow-hidden .shadow .no-underline .transition;
+}
+
+.card--flex {
+    @apply .flex .items-center .justify-center;
+}
+
+.card:hover {
+    @apply .shadow-md;
+    transform: translateY( -1px );
+}
