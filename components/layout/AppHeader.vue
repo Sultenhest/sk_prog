@@ -1,7 +1,7 @@
 <template>
     <header
         id="nav"
-        class="w-full z-40 transition"
+        class="w-full z-40 animated fadeInDownBig"
         :class="[
             darkmode ? 'bg-black text-white' : 'bg-white text-black',
             frontpage

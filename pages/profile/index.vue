@@ -1,5 +1,5 @@
 <template>
-    <div id="profile" class="container mx-auto mb-6">
+    <div id="profile" class="container mx-auto mb-6 animated fadeInUp">
         <div class="mx-6 pt-32 pb-10">
             <h2 class="text-4xl font-bold">Profile</h2>
             <p class="text-base text-grey-darker">A short word</p>
@@ -78,9 +78,8 @@
 
                     <p class="mb-3 w-full">
                         Below is the tools I work with most often, not including
-                        the libraries Tailwind (truly amazing), Bulma, Bootstrap
-                        or the package manager npm, which is hard to live
-                        without.
+                        the libraries Tailwind, Bulma, Bootstrap or the package
+                        manager npm, which is hard to live without.
                     </p>
 
                     <a
