@@ -61,7 +61,7 @@ module.exports = {
      */
     optimizedImages: {
         optimizeImages: true
-    }
+    },
 
     /*
      ** Build configuration
