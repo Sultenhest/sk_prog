@@ -1,11 +1,8 @@
 <template>
     <header
         id="nav"
-        class="w-full z-40 animated fadeInDownBig"
-        :class="[
-            darkmode ? 'bg-black text-white' : 'bg-white text-black',
-            frontpage
-        ]"
+        class="w-full bg-transparent z-40 absolute animated fadeInDownBig"
+        :class="textColor"
     >
         <div
             class="container mx-auto px-6 h-24 flex justify-between items-center"
@@ -53,8 +50,6 @@
 </template>
 
 <script>
-import inViewport from 'in-viewport';
-
 import Logo from '~/components/Logo.vue';
 
 export default {
@@ -62,46 +57,16 @@ export default {
     components: {
         Logo
     },
-    data() {
-        return {
-            isInViewport: true
-        };
-    },
     computed: {
-        frontpage() {
-            return this.$nuxt.$route.name === 'index' && this.isInViewport
-                ? 'navigation__absolute'
-                : 'navigation__fixed';
-        },
         darkmode() {
             return this.$store.getters['darkmode/isDarkmode'];
-        }
-    },
-    mounted() {
-        window.addEventListener('scroll', this.isVisible, { passive: true });
-    },
-    methods: {
-        isVisible() {
-            this.isInViewport = inViewport(
-                document.querySelector('#header-section'),
-                { offset: -96, debounce: 200 }
-            );
+        },
+        textColor() {
+            return this.$nuxt.$route.name === 'index' ||
+                this.$store.getters['darkmode/isDarkmode']
+                ? 'text-white'
+                : 'text-black';
         }
     }
 };
 </script>
-
-<style lang="scss" scoped>
-.navigation a:hover {
-    @apply .border-b-2;
-}
-
-.navigation__absolute {
-    @apply .absolute .text-white;
-    background: transparent !important;
-}
-
-.navigation__fixed {
-    @apply .fixed;
-}
-</style>
