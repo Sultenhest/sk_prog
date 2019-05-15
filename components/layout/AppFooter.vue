@@ -1,5 +1,7 @@
 <template>
-    <footer class="container mx-auto px-12 py-6 text-grey-darker text-base">
+    <footer
+        class="container mx-auto px-12 py-6 text-grey-darker text-base animated fadeInUp delay-halfs"
+    >
         <div class="md:flex md:justify-center text-center">
             <p class="md:mr-6">&copy; SK Programmering - 2019</p>
             <a

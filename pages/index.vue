@@ -15,23 +15,27 @@
             </div>
         </section>
 
-        <section class="container mx-auto my-6 animated fadeInUpBig">
+        <section class="container mx-auto my-6 animated fadeInUp delay-1s">
             <div class="px-6 py-10">
                 <h2 class="text-4xl font-bold">Projects</h2>
                 <p class="text-base text-grey-darker">Selected Work</p>
             </div>
 
-            <ProjectList />
+            <ConditionalDisplay unique-id="#project-list">
+                <ProjectList />
+            </ConditionalDisplay>
         </section>
     </div>
 </template>
 
 <script>
+import ConditionalDisplay from '@/components/layout/utilities/ConditionalDisplay.vue';
 import ProjectList from '@/components/project/ProjectList.vue';
 
 export default {
     name: 'Home',
     components: {
+        ConditionalDisplay,
         ProjectList
     },
     computed: {
