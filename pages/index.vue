@@ -21,7 +21,7 @@
                 <p class="text-base text-grey-darker">Selected Work</p>
             </div>
 
-            <ConditionalDisplay unique-id="#project-list">
+            <ConditionalDisplay>
                 <ProjectList />
             </ConditionalDisplay>
         </section>

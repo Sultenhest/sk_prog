@@ -88,7 +88,8 @@ module.exports = {
      */
     transition: {
         name: 'page',
-        mode: 'out-in'
+        mode: 'out-in',
+        duration: 500
     },
 
     /*

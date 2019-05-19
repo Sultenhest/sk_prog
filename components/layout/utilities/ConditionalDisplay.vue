@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div v-show="isVisible" :id="uniqueId">
+        <div v-show="isVisible">
             <slot> </slot>
         </div>
     </transition>
@@ -11,9 +11,6 @@ import inViewport from 'in-viewport';
 
 export default {
     name: 'ConditionalDisplay',
-    props: {
-        uniqueId: String
-    },
     data() {
         return {
             isVisible: false
@@ -24,7 +21,7 @@ export default {
     },
     methods: {
         checkDisplay() {
-            this.isVisible = !inViewport(document.querySelector(this.uniqueId));
+            this.isVisible = !inViewport(this, { offset: -300, debounce: 300 });
         }
     }
 };
