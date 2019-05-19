@@ -11,7 +11,7 @@
             <h3 class="font-bold text-xl mb-2">
                 {{ title }}
             </h3>
-            <p class="text-grey-darker text-base" :if="subtitle">
+            <p class="text-gray-800 text-base" :if="subtitle">
                 {{ subtitle }}
             </p>
         </div>

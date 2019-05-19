@@ -2,7 +2,9 @@
     <div
         id="app"
         class="antialiased font-sans h-full min-h-screen"
-        :class="[darkmode ? 'bg-black text-white' : 'bg-white text-black']"
+        :class="[
+            darkmode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
+        ]"
     >
         <AppHeader />
 

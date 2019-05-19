@@ -25,7 +25,9 @@
                     subtitle="WordPress Repository Theme"
                 />
             </div>
-            <div class="grid__cell-wide flex m-6 p-6 card bg-green text-white">
+            <div
+                class="grid__cell-wide flex m-6 p-6 card bg-green-600 text-white"
+            >
                 <p>And more.. Maybe your site too?</p>
             </div>
         </div>
@@ -59,7 +61,9 @@
                 />
             </div>
             <div class="w-full md:w-1/2">
-                <div class="h-full card card--flex m-6 p-6 bg-green text-white">
+                <div
+                    class="h-full card card--flex m-6 p-6 bg-green-600 text-white"
+                >
                     <p>And more.. Maybe your site too?</p>
                 </div>
             </div>

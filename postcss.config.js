@@ -1,5 +1,4 @@
 const join = require('path').join
-const tailwindJS = join(__dirname, 'tailwind.js')
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 class TailwindExtractor {
@@ -9,7 +8,7 @@ class TailwindExtractor {
 }
 
 const plugins = [
-    require('tailwindcss')(tailwindJS),
+    require('tailwindcss'),
     require('autoprefixer')
 ]
 

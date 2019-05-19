@@ -17,13 +17,13 @@
             </nuxt-link>
 
             <nav class="navigation">
-                <nuxt-link to="/" title="Projects" class="mr-6 border-green"
+                <nuxt-link to="/" title="Projects" class="mr-6 border-green-600"
                     >Projects</nuxt-link
                 >
                 <nuxt-link
                     to="/profile"
                     title="Profile"
-                    class="mr-6 border-green"
+                    class="mr-6 border-green-600"
                     >Profile</nuxt-link
                 >
                 <nuxt-link
@@ -65,7 +65,7 @@ export default {
             return this.$nuxt.$route.name === 'index' ||
                 this.$store.getters['darkmode/isDarkmode']
                 ? 'text-white'
-                : 'text-black';
+                : 'text-gray-900';
         }
     }
 };

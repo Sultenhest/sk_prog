@@ -2,7 +2,7 @@
     <div id="profile" class="container mx-auto mb-6 animated fadeInUp">
         <div class="mx-6 pt-32 pb-10">
             <h2 class="text-4xl font-bold">Profile</h2>
-            <p class="text-base text-grey-darker">A short word</p>
+            <p class="text-base text-gray-700">A short word</p>
         </div>
 
         <section class="flex flex-wrap mt-6">
@@ -18,7 +18,7 @@
                         href="https://www.instagram.com/trinedreisig/"
                         target="_blank"
                         title="Trine's Instagram"
-                        class="no-underline hover:underline text-inherit"
+                        class="hover:underline"
                         >Trine Jul Dreisig</a
                     >
                 </p>
@@ -28,12 +28,12 @@
                     href="https://www.linkedin.com/in/simon-konstantyner/"
                     target="_blank"
                     title="LinkedIn"
-                    class="text-inherit text-base leading-normal block"
+                    class="hover:underline block"
                     >LinkedIn</a
                 >
                 <a
                     href="mailto:sultenhest@gmail.com?subject=Hi Simon"
-                    class="text-inherit text-base leading-normal"
+                    class="hover:underline"
                     title="Email me"
                     >Email</a
                 >
@@ -49,7 +49,7 @@
                         href="https://kea.dk/"
                         target="_blank"
                         title="KEA"
-                        class="text-inherit no-underline hover:underline"
+                        class="hover:underline"
                         >KEA</a
                     >. When not studying, I spend most of my time working on
                     different web based projects, toying around with new
@@ -156,5 +156,3 @@ export default {
     }
 };
 </script>
-
-<style lang="css" scoped></style>

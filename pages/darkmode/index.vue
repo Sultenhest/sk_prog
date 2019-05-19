@@ -5,7 +5,7 @@
     >
         <div class="mx-6 pt-32">
             <h2 class="text-4xl font-bold mb-6">Enter darkmode?</h2>
-            <p class="text-base text-grey-darker">
+            <p class="text-base text-grey-700">
                 <no-ssr>
                     <toggle-button
                         :value="darkmode"
