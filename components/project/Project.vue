@@ -1,6 +1,6 @@
 <template>
     <a
-        class="card bg-white text-black z-0"
+        class="card bg-white text-gray-800 z-0"
         target="_blank"
         :href="link"
         :class="hasMargin ? 'm-6' : ''"
@@ -11,7 +11,7 @@
             <h3 class="font-bold text-xl mb-2">
                 {{ title }}
             </h3>
-            <p class="text-gray-800 text-base" :if="subtitle">
+            <p class="text-gray-600 text-base" :if="subtitle">
                 {{ subtitle }}
             </p>
         </div>

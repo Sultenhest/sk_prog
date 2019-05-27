@@ -10,15 +10,22 @@
                     Simon Konstantyner
                 </h1>
                 <p class="text-xl text-gray-200">
-                    is a web developer
+                    is a web developer living in Humlebæk Denmark
                 </p>
             </div>
         </section>
 
         <section class="container mx-auto my-6 animated fadeInUp delay-1s">
             <div class="px-6 py-10">
-                <h2 class="text-4xl font-bold">Projects</h2>
-                <p class="text-base text-gray-700">Selected Work</p>
+                <h2
+                    class="text-4xl font-bold"
+                    :class="[darkmode ? 'text-white' : 'text-gray-800']"
+                >
+                    Projects
+                </h2>
+                <p class="text-base text-gray-600">
+                    Selected Work
+                </p>
             </div>
 
             <ConditionalDisplay>

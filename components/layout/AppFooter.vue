@@ -1,5 +1,5 @@
 <template>
-    <footer class="container mx-auto px-12 py-6 text-gray-700 text-base">
+    <footer class="container mx-auto px-12 py-6 text-base text-gray-600">
         <div class="md:flex md:justify-center text-center">
             <p class="md:mr-6">&copy; SK Programmering - 2019</p>
             <a

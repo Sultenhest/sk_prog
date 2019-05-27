@@ -28,7 +28,11 @@
             <div
                 class="grid__cell-wide flex m-6 p-6 card bg-green-600 text-white"
             >
-                <p>And more.. Maybe your site too?</p>
+                <a
+                    href="mailto:sultenhest@gmail.com?subject=Hi Simon"
+                    title="Email me"
+                    >And more.. Maybe your site too?</a
+                >
             </div>
         </div>
 
@@ -64,7 +68,11 @@
                 <div
                     class="h-full card card--flex m-6 p-6 bg-green-600 text-white"
                 >
-                    <p>And more.. Maybe your site too?</p>
+                    <a
+                        href="mailto:sultenhest@gmail.com?subject=Hi Simon"
+                        title="Email me"
+                        >And more.. Maybe your site too?</a
+                    >
                 </div>
             </div>
         </div>
