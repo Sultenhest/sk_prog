@@ -10,7 +10,7 @@
                     Simon Konstantyner
                 </h1>
                 <p class="text-xl text-gray-200">
-                    is a fullstack webdeveloper
+                    is a web developer
                 </p>
             </div>
         </section>
