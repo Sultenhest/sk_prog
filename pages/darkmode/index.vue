@@ -1,8 +1,5 @@
 <template>
-    <div
-        id="darkmode"
-        class="container mx-auto mb-6 text-center animated fadeInUp"
-    >
+    <div id="darkmode" class="container mx-auto mb-6 text-center">
         <div class="mx-6 pt-32">
             <h2 class="text-4xl font-bold mb-6">Enter darkmode?</h2>
             <p class="text-base text-grey-700">

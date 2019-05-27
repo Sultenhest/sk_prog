@@ -1,5 +1,5 @@
 <template>
-    <div id="profile" class="container mx-auto mb-6 animated fadeInUp">
+    <div id="profile" class="container mx-auto mb-6">
         <div class="mx-6 pt-32 pb-10">
             <h2 class="text-4xl font-bold">Profile</h2>
             <p class="text-base text-gray-700">A short word</p>

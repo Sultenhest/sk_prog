@@ -30,7 +30,7 @@ export default {
 <style lang="css" scoped>
 .fade-enter-active,
 .fade-leave-active {
-    transition: all 3s;
+    transition: opacity .5s;
 }
 .fade-enter,
 .fade-leave-to {
