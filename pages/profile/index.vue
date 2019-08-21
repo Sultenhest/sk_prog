@@ -161,7 +161,7 @@
 </template>
 
 <script>
-import LinkedIn from '@/components/icons/Linkedin.vue';
+import LinkedIn from '@/components/icons/LinkedIn.vue';
 import GitHub from '@/components/icons/Github.vue';
 import Email from '@/components/icons/Email.vue';
 import Express from '@/components/icons/Express.vue';
