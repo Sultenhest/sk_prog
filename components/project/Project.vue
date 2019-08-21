@@ -3,7 +3,6 @@
         class="card bg-white text-gray-800 z-0"
         target="_blank"
         :href="link"
-        :class="hasMargin ? 'm-6' : ''"
         :title="title"
     >
         <img class="w-full" :src="imageSrc" :alt="title" />
@@ -22,10 +21,6 @@
 export default {
     name: 'Project',
     props: {
-        hasMargin: {
-            type: Boolean,
-            default: false
-        },
         link: {
             type: String,
             required: true
@@ -40,13 +35,7 @@ export default {
         },
         subtitle: {
             type: String,
-            required: false,
-            default: ''
-        }
-    },
-    computed: {
-        imagePath() {
-            return require('~/assets/images/' + this.imageSrc);
+            required: true
         }
     }
 };
