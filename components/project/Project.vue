@@ -6,7 +6,7 @@
         :class="hasMargin ? 'm-6' : ''"
         :title="title"
     >
-        <img class="w-full" :src="imagePath" :alt="title" />
+        <img class="w-full" :src="imageSrc" :alt="title" />
         <div class="p-6 -mt-1">
             <h3 class="font-bold text-xl mb-2">
                 {{ title }}
