@@ -51,6 +51,7 @@ module.exports = {
      ** Nuxt.js modules
      */
     modules: [
+        '@nuxtjs/dotenv',
         '@nuxtjs/pwa',
         '@bazzite/nuxt-optimized-images'
     ],
@@ -79,6 +80,9 @@ module.exports = {
                     loader: 'eslint-loader',
                     exclude: /(node_modules)/
                 });
+            }
+            config.node = {
+                fs: 'empty'
             }
         }
     },
