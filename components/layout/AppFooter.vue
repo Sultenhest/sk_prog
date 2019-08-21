@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg viewBox="0 0 1440 320">
             <path
                 fill="#38a169"
                 fill-opacity="0.8"

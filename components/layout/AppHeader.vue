@@ -1,7 +1,7 @@
 <template>
     <header
         id="nav"
-        class="w-full bg-transparent z-40 absolute"
+        class="w-full bg-transparent z-40 absolute animated fadeInDownBig"
         :class="textColor"
     >
         <div
