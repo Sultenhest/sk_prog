@@ -1,10 +1,10 @@
 <template>
     <section class="mb-12">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4 px-6">
+        <div class="flex flex-wrap lg:-mx-4 px-6">
             <div
                 v-for="(project, index) in projects"
                 :key="index"
-                class="my-1 px-1 w-full md:w-1/2 md:my-4 md:px-4"
+                class="my-4 px-1 w-full md:w-1/2 md:my-4 md:px-4"
             >
                 <Project
                     :link="project.fields.link"
@@ -16,7 +16,7 @@
         </div>
 
         <div
-            class="block sm:flex m-6 p-12 block rounded overflow-hidden shadow bg-green-400 text-white text-center sm:text-left"
+            class="block sm:flex my-4 mx-6 md:m-6 p-12 block rounded overflow-hidden shadow bg-green-400 text-white text-center sm:text-left"
         >
             <div class="w-full sm:max-w-4/6">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-4xl">
