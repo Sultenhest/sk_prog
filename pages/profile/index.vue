@@ -29,19 +29,38 @@
                 </p>
 
                 <h4 class="text-base font-bold mb-3">Contact</h4>
-                <a
-                    href="https://www.linkedin.com/in/simon-konstantyner/"
-                    target="_blank"
-                    title="LinkedIn"
-                    class="hover:underline block"
-                    >LinkedIn</a
-                >
-                <a
-                    href="mailto:sultenhest@gmail.com?subject=Hi Simon"
-                    class="hover:underline"
-                    title="Email me"
-                    >Email</a
-                >
+                <div>
+                    <a
+                        href="https://www.linkedin.com/in/simon-konstantyner/"
+                        target="_blank"
+                        title="LinkedIn"
+                        class="py-2 hover:underline inline-flex items-center"
+                    >
+                        <LinkedIn />
+                        <span class="mt-1">LinkedIn</span>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://github.com/Sultenhest"
+                        target="_blank"
+                        title="GitHub"
+                        class="py-2 hover:underline inline-flex items-center"
+                    >
+                        <GitHub />
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="mailto:sultenhest@gmail.com?subject=Hi Simon"
+                        class="py-2 hover:underline inline-flex items-center"
+                        title="Email me"
+                    >
+                        <Email />
+                        <span>Email</span>
+                    </a>
+                </div>
             </aside>
 
             <div class="md:w-2/3 px-6 leading-normal">
@@ -142,6 +161,9 @@
 </template>
 
 <script>
+import LinkedIn from '@/components/icons/LinkedIn.vue';
+import GitHub from '@/components/icons/GitHub.vue';
+import Email from '@/components/icons/Email.vue';
 import Express from '@/components/icons/Express.vue';
 import Git from '@/components/icons/Git.vue';
 import Laravel from '@/components/icons/Laravel.vue';
@@ -152,6 +174,9 @@ import WordPress from '@/components/icons/WordPress.vue';
 export default {
     name: 'Profile',
     components: {
+        LinkedIn,
+        GitHub,
+        Email,
         Express,
         Git,
         Laravel,
