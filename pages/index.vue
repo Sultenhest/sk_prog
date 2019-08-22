@@ -31,6 +31,8 @@
             <ConditionalDisplay>
                 <ProjectList />
             </ConditionalDisplay>
+
+            <ContactCard />
         </section>
     </div>
 </template>
@@ -38,12 +40,14 @@
 <script>
 import ConditionalDisplay from '@/components/layout/utilities/ConditionalDisplay.vue';
 import ProjectList from '@/components/project/ProjectList.vue';
+import ContactCard from '@/components/layout/ContactCard.vue';
 
 export default {
     name: 'Home',
     components: {
         ConditionalDisplay,
-        ProjectList
+        ProjectList,
+        ContactCard
     },
     computed: {
         darkmode() {
