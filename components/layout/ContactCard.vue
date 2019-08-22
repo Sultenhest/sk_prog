@@ -1,7 +1,7 @@
 <template>
     <div
         id="contact-card"
-        class="block sm:flex mx-6 mb-12 p-12 block rounded overflow-hidden shadow bg-green-400 text-white text-center sm:text-left"
+        class="card sm:flex mx-6 mb-12 p-12 bg-green-400 text-white text-center sm:text-left"
     >
         <div class="w-full sm:max-w-4/6">
             <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-4xl">
