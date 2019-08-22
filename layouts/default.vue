@@ -1,14 +1,14 @@
 <template>
     <div
         id="app"
-        class="antialiased font-sans h-full min-h-screen"
+        class="antialiased font-sans h-full min-h-screen flex flex-col items-stretch"
         :class="[
             darkmode ? 'bg-gray-800 text-white' : 'bg-white text-gray-700'
         ]"
     >
         <AppHeader />
 
-        <main id="main" class="w-full">
+        <main id="main" class="w-full flex-grow">
             <nuxt />
         </main>
 
