@@ -17,7 +17,7 @@
                 d="M0,192L60,160C120,128,240,64,360,37.3C480,11,600,21,720,69.3C840,117,960,203,1080,202.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
             ></path>
         </svg>
-        <div class="bg-green-600">
+        <div class="bg-green-600" @mouseover="changeEmoji()">
             <div class="container mx-auto px-12 pb-6 text-base text-gray-100">
                 <div class="md:flex md:justify-center text-center">
                     <p class="md:mr-6">&copy; SK Programmering - 2019</p>
@@ -28,7 +28,9 @@
                         >CVR-nr. 40 29 38 33</a
                     >
                 </div>
-                <div class="flex justify-center pt-3">(っ-◉◡◉)っ</div>
+                <div class="flex justify-center pt-3">
+                    {{ emoji }}
+                </div>
             </div>
         </div>
     </footer>
@@ -36,6 +38,17 @@
 
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            emoji: '(っ-◉◡◉)っ',
+            emojis: ['(っ-◉◡◉)っ', '(◕દ◕)', '( ꈍᴗꈍ)', '( ˘ ³˘)']
+        };
+    },
+    methods: {
+        changeEmoji: function() {
+            this.emoji = this.emojis[Math.floor(Math.random() * 4)];
+        }
+    }
 };
 </script>
