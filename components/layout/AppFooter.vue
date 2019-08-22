@@ -42,12 +42,19 @@ export default {
     data() {
         return {
             emoji: '(っ-◉◡◉)っ',
-            emojis: ['(っ-◉◡◉)っ', '(◕દ◕)', '( ꈍᴗꈍ)', '( ˘ ³˘)']
+            emojis: [
+                '(っ-◉◡◉)っ',
+                '(◕દ◕)',
+                '( ꈍᴗꈍ)',
+                '( ˘ ³˘)',
+                'ʕっ•ᴥ•ʔっ',
+                'ฅ^•ﻌ•^ฅ'
+            ]
         };
     },
     methods: {
         changeEmoji: function() {
-            this.emoji = this.emojis[Math.floor(Math.random() * 4)];
+            this.emoji = this.emojis[Math.floor(Math.random() * this.emojis.length)];
         }
     }
 };
