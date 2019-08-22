@@ -54,7 +54,8 @@ export default {
     },
     methods: {
         changeEmoji: function() {
-            this.emoji = this.emojis[Math.floor(Math.random() * this.emojis.length)];
+            const n = Math.floor(Math.random() * this.emojis.length);
+            this.emoji = this.emojis[n];
         }
     }
 };
