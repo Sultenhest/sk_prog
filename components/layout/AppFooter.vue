@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <svg viewBox="0 0 1440 320" class="border-red-900">
+        <svg id="waves" viewBox="0 0 1440 320">
             <path
                 fill="#38a169"
                 fill-opacity="0.8"
@@ -52,3 +52,9 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+#waves {
+    margin-bottom: -1px;
+}
+</style>
