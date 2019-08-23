@@ -19,7 +19,7 @@
             <a
                 href="mailto:sultenhest@gmail.com?subject=Hi Simon"
                 title="Email me"
-                class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-green-100 hover:bg-green-600 md:text-lg xl:text-base text-gray-800 hover:text-white font-semibold leading-tight shadow-md self-center"
+                class="button bg-green-100 hover:bg-green-600 text-gray-800 hover:text-white self-center"
                 >Contact Me</a
             >
         </div>

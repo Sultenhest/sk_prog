@@ -1,0 +1,8 @@
+.button {
+    @apply .rounded-lg .px-4 .py-3 .font-semibold .leading-tight .shadow-md .transition;
+    //.md:px-5 .xl:px-4 .md:py-4 .xl:py-3 .md:text-lg .xl:text-base 
+    &:hover {
+        @apply .shadow-lg;
+        transform: translateY( -1px );
+    }
+}
