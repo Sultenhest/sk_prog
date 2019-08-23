@@ -1,6 +1,6 @@
 <template>
     <div id="contact" class="container w-full md:w-2/4 mx-auto mb-6">
-        <div class="mx-6 pt-32 pb-10">
+        <div class="mx-6 pt-32 pb-2 md:pb-10">
             <h2
                 class="text-4xl font-bold"
                 :class="[darkmode ? 'text-white' : 'text-gray-800']"

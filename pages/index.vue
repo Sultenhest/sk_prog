@@ -16,7 +16,7 @@
         </section>
 
         <section class="container mx-auto my-6 animated fadeInUp delay-1s">
-            <div class="px-6 py-10">
+            <div class="px-6 pt-10 pb-2 md:pb-10">
                 <h2
                     class="text-4xl font-bold"
                     :class="[darkmode ? 'text-white' : 'text-gray-800']"

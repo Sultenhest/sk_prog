@@ -1,6 +1,6 @@
 <template>
     <div id="profile" class="container mx-auto mb-6">
-        <div class="mx-6 pt-32 pb-10">
+        <div class="mx-6 pt-32 pb-2 md:pb-10">
             <h2
                 class="text-4xl font-bold"
                 :class="[darkmode ? 'text-white' : 'text-gray-800']"
