@@ -24,7 +24,9 @@ a {
     @apply .transition;
 }
 
+@import 'utilities/buttons';
 @import 'utilities/cards';
+@import 'utilities/input';
 
 .bg-cover-image {
     @apply .bg-fixed .bg-center .bg-no-repeat .bg-cover;

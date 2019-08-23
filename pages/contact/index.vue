@@ -1,38 +1,42 @@
 <template>
-    <div id="darkmode" class="container mx-auto mb-6">
-        <div class="mx-6 pt-32">
-            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
-            <div class="text-base text-grey-700">
-                <form name="contact" method="POST" netlify>
-                    <p>
-                        <label
-                            >Your Name: <input type="text" name="name"
-                        /></label>
-                    </p>
-                    <p>
-                        <label
-                            >Your Email: <input type="email" name="email"
-                        /></label>
-                    </p>
-                    <p>
-                        <label
-                            >Message: <textarea name="message"></textarea
-                        ></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </form>
-            </div>
+    <div id="contact" class="container w-full md:w-2/4 mx-auto mb-6">
+        <div class="mx-6 pt-32 pb-10">
+            <h2
+                class="text-4xl font-bold"
+                :class="[darkmode ? 'text-white' : 'text-gray-800']"
+            >
+                Contact Me
+            </h2>
+            <p class="text-base text-gray-600">Drop me a line</p>
         </div>
+
+        <section
+            class="flex flex-wrap mt-6 text-base text-grey-700 leading-normal"
+        >
+            <div class="mb-6 px-6">
+                <p
+                    class="mb-6 sm:text-lg md:text-xl xl:text-lg leading-relaxed"
+                >
+                    If you've got an interesting idea, project or job, don't
+                    hesitate to contact me. I'm always up for new challenges.
+                </p>
+
+                <ContactForm />
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
 import { mapMutations } from 'vuex';
 
+import ContactForm from '@/components/layout/ContactForm.vue';
+
 export default {
     name: 'Darkmode',
+    components: {
+        ContactForm
+    },
     computed: {
         darkmode() {
             return this.$store.getters['darkmode/isDarkmode'];
