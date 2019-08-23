@@ -11,7 +11,7 @@
         </div>
 
         <section class="flex flex-wrap mt-6">
-            <aside class="md:w-1/3 mb-6 px-6">
+            <aside class="md:w-1/3 mb-6 sm:mb-12 px-6">
                 <img
                     class="rounded mb-3"
                     alt="Simon Konstantyner"
@@ -63,7 +63,7 @@
                 </div>
             </aside>
 
-            <div class="md:w-2/3 px-6 leading-normal">
+            <div class="md:w-2/3 mb-6 sm:mb-12 px-6 leading-normal">
                 <h3 class="text-2xl font-bold mb-3">Simon Konstantyner</h3>
                 <p class="mb-3">
                     I'm a freelance web developer with an AP in Computer Science
@@ -156,6 +156,8 @@
                     </a>
                 </div>
             </div>
+
+            <ContactCard />
         </section>
     </div>
 </template>
@@ -170,6 +172,7 @@ import Laravel from '@/components/icons/Laravel.vue';
 import Sass from '@/components/icons/Sass.vue';
 import Vue from '@/components/icons/Vue.vue';
 import WordPress from '@/components/icons/WordPress.vue';
+import ContactCard from '@/components/layout/ContactCard.vue';
 
 export default {
     name: 'Profile',
@@ -182,7 +185,8 @@ export default {
         Laravel,
         Sass,
         Vue,
-        WordPress
+        WordPress,
+        ContactCard
     },
     computed: {
         darkmode() {
