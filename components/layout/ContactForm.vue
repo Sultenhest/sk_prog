@@ -115,10 +115,10 @@ export default {
                     axiosConfig
                 )
                 .then(() => {
-                    this.displaySuccess = true;
+                    alert('success');
                 })
                 .catch(() => {
-                    this.displayError = true;
+                    alert('error');
                 });
         }
     }
