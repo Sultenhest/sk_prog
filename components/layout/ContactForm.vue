@@ -1,5 +1,11 @@
 <template>
-    <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+    <form
+        name="contact"
+        method="POST"
+        netlify
+        netlify-honeypot="bot-field"
+        @submit.prevent="handleSubmit"
+    >
         <p class="hidden">
             <label
                 >Don’t fill this out if you're human: <input name="bot-field"
@@ -36,7 +42,43 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-    name: 'ContactForm'
+    name: 'ContactForm',
+    data() {
+        return {
+            form: {
+                name: '',
+                email: '',
+                message: ''
+            }
+        };
+    },
+    methods: {
+        encode(data) {
+            return Object.keys(data)
+                .map(
+                    key =>
+                        `${encodeURIComponent(key)}=${encodeURIComponent(
+                            data[key]
+                        )}`
+                )
+                .join('&');
+        },
+        handleSubmit() {
+            const axiosConfig = {
+                header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+            };
+            axios.post(
+                '/',
+                this.encode({
+                    'form-name': 'contact',
+                    ...this.form
+                }),
+                axiosConfig
+            );
+        }
+    }
 };
 </script>
