@@ -4,14 +4,8 @@
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        @submit.prevent="handleSubmit"
+        @submit="handleSubmit"
     >
-        <p class="hidden">
-            <label
-                >Don’t fill this out if you're human: <input name="bot-field"
-            /></label>
-        </p>
-
         <label class="mb-2" for="name"
             >Your name
             <small class="block text-sm text-gray-500"
@@ -66,7 +60,8 @@
             id="success"
             class="rounded-lg mb-4 px-4 py-3 font-semibold leading-tight bg-green-600 text-white"
         >
-            You're Awesome! Thank you for your submission!
+            You're Awesome, {{ form.name }}! Thank you for your message! You'll
+            hear from me ASAP!
         </div>
 
         <button
@@ -105,7 +100,8 @@ export default {
                 )
                 .join('&');
         },
-        handleSubmit() {
+        handleSubmit(event) {
+            event.preventDefault();
             const axiosConfig = {
                 header: { 'Content-Type': 'application/x-www-form-urlencoded' }
             };
