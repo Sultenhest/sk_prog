@@ -28,6 +28,8 @@ a {
 @import 'utilities/cards';
 @import 'utilities/input';
 
+@import 'layout/navigation';
+
 .bg-cover-image {
     @apply .bg-fixed .bg-center .bg-no-repeat .bg-cover;
     background-image: url('../images/header.jpg');

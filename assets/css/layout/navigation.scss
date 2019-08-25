@@ -1,0 +1,24 @@
+.close {
+    @apply .mt-2 .mr-2 .rounded-full .transition;
+    transform: translateY(2px);
+}
+
+.navigation {
+    a {
+        @apply .mr-6 .border-green-600;
+    }
+
+    &.mobile {
+        @apply .block .rounded .shadow .absolute .top-0 .right-0 .bg-white;
+        left: 50%;
+        @apply .flex .flex-col .mt-6 .mr-6 .pt-12 .text-gray-800 .font-semibold .leading-tight;
+
+        a {
+            @apply .m-2 .p-4 .rounded .border-none;
+
+            &:hover {
+                @apply .bg-gray-200;
+            }
+        }
+    }
+}

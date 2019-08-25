@@ -1,61 +1,54 @@
 <template>
     <header
         id="nav"
-        class="w-full bg-transparent z-40 absolute animated fadeInDownBig"
+        class="w-full bg-transparent z-40 absolute"
         :class="textColor"
     >
         <div
-            class="container mx-auto px-6 h-24 flex justify-between items-center"
+            class="relative container mx-auto px-6 h-24 flex justify-between items-center"
         >
             <nuxt-link
                 to="/"
                 title="Home"
                 class="title-link flex items-center no-underline border-none"
+                @click="toggleNavigation"
             >
                 <Logo />
                 <p class="hidden md:block text-inherit">SK Programmering</p>
             </nuxt-link>
 
-            <nav class="navigation">
-                <nuxt-link to="/" title="Projects" class="mr-6 border-green-600"
-                    >Projects</nuxt-link
-                >
-                <nuxt-link
-                    to="/profile"
-                    title="Profile"
-                    class="mr-6 border-green-600"
-                    >Profile</nuxt-link
-                >
-                <nuxt-link
-                    v-if="darkmode"
-                    to="/darkmode"
-                    title="Sun"
-                    role="image"
-                    aria-label="sun with face"
-                    class="border-none"
-                    >🌞</nuxt-link
-                >
-                <nuxt-link
-                    v-else
-                    to="/darkmode"
-                    title="Moon"
-                    role="image"
-                    aria-label="crescent moon"
-                    class="border-none"
-                    >🌙</nuxt-link
-                >
-            </nav>
+            <button
+                class="z-40 block md:hidden button bg-green-600 hover:bg-green-400 text-white"
+                :class="{ close: displayMobileNavigation }"
+                @click="toggleNavigation"
+            >
+                {{ menuButton }}
+            </button>
+
+            <AppNavigation
+                class="hidden md:block"
+                :class="{ mobile: displayMobileNavigation }"
+                @navPressed="toggleNavigation"
+            />
         </div>
     </header>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue';
+import AppNavigation from '~/components/layout/AppNavigation.vue';
 
 export default {
     name: 'AppHeader',
     components: {
-        Logo
+        Logo,
+        AppNavigation
+    },
+    data() {
+        return {
+            menuButton: 'Menu',
+            displayMobileNavigation: false
+        };
     },
     computed: {
         darkmode() {
@@ -66,6 +59,14 @@ export default {
                 this.$store.getters['darkmode/isDarkmode']
                 ? 'text-white'
                 : 'text-gray-900';
+        }
+    },
+    methods: {
+        toggleNavigation() {
+            this.displayMobileNavigation = !this.displayMobileNavigation;
+            this.displayMobileNavigation
+                ? (this.menuButton = '×')
+                : (this.menuButton = 'Menu');
         }
     }
 };
