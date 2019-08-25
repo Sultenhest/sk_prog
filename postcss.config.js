@@ -17,7 +17,7 @@ const whitelisted = [
     'page-enter-active', 'page-leave-active', 'page-enter', 'page-leave-active',
     'progress', 'nuxt-progress', 'nuxt-progress-notransition', 'nuxt-progress-failed',
     'border-b-2',
-    '.mobile', '.close'
+    'mobile', 'close'
 ]
 
 if (process.env.NODE_ENV === 'production') {
