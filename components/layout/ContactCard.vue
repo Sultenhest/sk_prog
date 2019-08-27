@@ -16,11 +16,11 @@
             </p>
         </div>
         <div class="w-full sm:max-w-2/6 mt-6 sm:mt-0 flex justify-center">
-            <a
-                href="mailto:sultenhest@gmail.com?subject=Hi Simon"
-                title="Email me"
+            <nuxt-link
+                to="/contact"
+                title="Contact"
                 class="button bg-green-100 hover:bg-green-600 text-gray-800 hover:text-white self-center"
-                >Contact Me</a
+                >Contact Me</nuxt-link
             >
         </div>
     </div>
