@@ -4,7 +4,7 @@
             <div
                 v-for="(project, index) in projects"
                 :key="index"
-                class="my-4 px-1 w-full md:w-1/2 md:my-4 md:px-4"
+                class="my-4 w-full md:w-1/2 md:my-4 md:px-4"
             >
                 <Project
                     :link="project.fields.link"
