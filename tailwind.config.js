@@ -1,4 +1,7 @@
 module.exports = {
+    prefix: '',
+    important: false,
+    separator: ':',
     theme: {
         fontFamily: {
             sans: [
@@ -19,7 +22,9 @@ module.exports = {
         },
         maxWidth: {
             '2/6': '33.333333%',
-            '4/6': '66.666667%',
+            '4/6': '66.666667%'
         }
-    }
+    },
+    variants: {},
+    plugins: []
 };
