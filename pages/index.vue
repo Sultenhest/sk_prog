@@ -15,7 +15,7 @@
             </div>
         </section>
 
-        <section class="container mx-auto my-6 animated fadeInUp delay-1s">
+        <section class="container mx-auto my-6">
             <div class="px-6 pt-10 pb-2 md:pb-10">
                 <h2
                     class="text-4xl font-bold"
@@ -28,9 +28,9 @@
                 </p>
             </div>
 
-            <ConditionalDisplay>
-                <ProjectList />
-            </ConditionalDisplay>
+            <ProjectList />
+
+            <ParticipatedProjects />
 
             <ContactCard />
         </section>
@@ -38,15 +38,15 @@
 </template>
 
 <script>
-import ConditionalDisplay from '@/components/layout/utilities/ConditionalDisplay.vue';
 import ProjectList from '@/components/project/ProjectList.vue';
+import ParticipatedProjects from '@/components/project/ParticipatedProjects.vue';
 import ContactCard from '@/components/layout/ContactCard.vue';
 
 export default {
     name: 'Home',
     components: {
-        ConditionalDisplay,
         ProjectList,
+        ParticipatedProjects,
         ContactCard
     },
     computed: {
