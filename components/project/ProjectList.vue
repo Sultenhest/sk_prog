@@ -1,18 +1,16 @@
 <template>
-    <section class="mb-4 sm:mb-12">
-        <div class="flex flex-wrap lg:-mx-4 px-6">
-            <div
-                v-for="(project, index) in projects"
-                :key="index"
-                class="my-4 w-full md:w-1/2 md:my-4 md:px-4"
-            >
-                <Project
-                    :link="project.fields.link"
-                    :image-src="project.fields.image.fields.file.url"
-                    :title="project.fields.title"
-                    :subtitle="project.fields.excerpt"
-                />
-            </div>
+    <section class="px-6 mb-12">
+        <div
+            v-for="(project, index) in projects"
+            :key="index"
+            class="my-4 w-full"
+        >
+            <Project
+                :link="project.fields.link"
+                :image-src="project.fields.image.fields.file.url"
+                :title="project.fields.title"
+                :subtitle="project.fields.excerpt"
+            />
         </div>
     </section>
 </template>
