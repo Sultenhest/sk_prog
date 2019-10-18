@@ -18,10 +18,7 @@
         <section class="bg-gray-200">
             <div class="container mx-auto pt-6 pb-2">
                 <div class="px-6 pt-10 pb-2 md:pb-10 text-center">
-                    <h2
-                        class="text-5xl font-bold"
-                        :class="[darkmode ? 'text-white' : 'text-gray-800']"
-                    >
+                    <h2 class="text-5xl font-bold text-gray-800">
                         Projects
                     </h2>
                     <p class="text-base text-gray-600">
