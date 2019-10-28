@@ -7,7 +7,7 @@ module.exports = {
      ** Headers of the page
      */
     head: {
-        title: 'SK Programming',
+        title: 'SK Programmering',
         meta: [
             { charset: 'utf-8' },
             {
