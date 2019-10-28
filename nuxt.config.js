@@ -90,7 +90,7 @@ module.exports = {
     /*
      ** Transition Settings
      */
-    transition: {
+    pageTransition: {
         name: 'page',
         mode: 'out-in',
         duration: 500
