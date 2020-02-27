@@ -12,7 +12,7 @@
         </p>
 
         <div class="flex flex-wrap justify-center lg:-mx-4">
-            <div class="my-4 w-1/2 md:w-1/4 my-4 px-4">
+            <div class="my-4 w-1/3 md:w-1/4 my-4 px-4">
                 <a
                     href="https://drkoncerthuset.dk/"
                     title="DR Koncerthuset"
@@ -21,9 +21,15 @@
                     <DRKoncerthuset />
                 </a>
             </div>
-            <div class="my-4 w-1/2 md:w-1/4 my-4 px-4 pt-8 sm:pt-6 lg:pt-12">
+            <div class="my-4 w-1/3 md:w-1/4 my-4 px-4 pt-8 sm:pt-6 lg:pt-12">
                 <a href="https://seedster.dk/" title="Seedster" target="_blank">
                     <Seedster />
+                </a>
+            </div>
+
+            <div class="my-4 w-1/3 md:w-1/3 my-4 px-4 pt-8 sm:pt-6 lg:pt-12">
+                <a href="https://worksome.dk/" title="Worksome" target="_blank">
+                    <img src="~/assets/images/worksome.png" />
                 </a>
             </div>
         </div>
