@@ -8,10 +8,6 @@ html {
 
 @tailwind utilities;
 
-.transition {
-    transition: all 0.2s;
-}
-
 .text-inherit {
     color: inherit;
 }
@@ -21,12 +17,13 @@ html {
 }
 
 a {
-    @apply .transition;
+    @apply .transition-all;
 }
 
 @import 'utilities/buttons';
 @import 'utilities/cards';
 @import 'utilities/input';
+@import 'utilities/page_transitioner';
 
 @import 'layout/navigation';
 

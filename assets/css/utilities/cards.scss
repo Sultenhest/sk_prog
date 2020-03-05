@@ -1,5 +1,5 @@
 .card {
-    @apply .block .rounded .overflow-hidden .shadow .no-underline .transition;
+    @apply .block .rounded .overflow-hidden .shadow .no-underline .transition-all .duration-150 .ease-in-out;
 }
 
 .card--flex {

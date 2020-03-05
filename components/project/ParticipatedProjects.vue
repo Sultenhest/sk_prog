@@ -26,12 +26,6 @@
                     <Seedster />
                 </a>
             </div>
-
-            <div class="my-4 w-1/3 md:w-1/3 my-4 px-4 pt-8 sm:pt-6 lg:pt-12">
-                <a href="https://worksome.dk/" title="Worksome" target="_blank">
-                    <img src="~/assets/images/worksome.png" />
-                </a>
-            </div>
         </div>
     </section>
 </template>

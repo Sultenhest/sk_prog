@@ -32,11 +32,8 @@ module.exports = {
     /*
      ** Customize the progress-bar color
      */
-    loading: {
-        color: '#38C172',
-        height: '5px'
-    },
-
+    loading: '~/components/loading.vue',
+    
     /*
      ** Global CSS
      */
@@ -100,6 +97,7 @@ module.exports = {
      ** Router Settings
      */
     router: {
+        middleware: 'pagetransition',
         linkActiveClass: '',
         linkExactActiveClass: 'border-b-2'
     }

@@ -1,0 +1,14 @@
+.page-transitioner {
+    @apply .h-full .w-full .fixed .top-0 .bg-gray-800 .z-50 .transition-all .duration-500 .ease-in-out;
+    transition-delay: 0.75s;
+    will-change: transform;
+    transform: translateY(0%);
+}
+
+.page-transitioner-enter {
+    transform: translateY(-100%);
+}
+
+.page-transitioner-exit {
+    transform: translateY(0%);
+}
