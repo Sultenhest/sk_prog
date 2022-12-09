@@ -21,7 +21,7 @@
     "axios": "^0.19.0",
     "contentful": "^7.10.0",
     "cross-env": "^5.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^7.0.0",
     "in-viewport": "^3.6.0",
